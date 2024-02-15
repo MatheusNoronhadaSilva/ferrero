@@ -1,0 +1,85 @@
+/* definindo variáveis para cores */
+:root{
+    --bs-body-bg: var(--primary);
+    --primary: #2E1012;
+    --secondary: #F3CC4D;
+}
+/* sobrescrevendo classes padrão do Bootstrap */
+/* a marcação !important dá um peso maior a regra, sobrescrevendo regras prévias */
+.bg-primary, .btn-primary{
+    background-color: var(--primary) !important;
+}
+.bg-secondary, .btn-secondary{
+    background-color: var(--secondary) !important;
+}
+.bg-tertiary, .btn-tertiary{
+    background-color: var(--tertiary) !important;
+}
+.bg-success, .btn-success{
+    background-color: var(--success) !important;
+}
+.bg-info, .btn-info{
+    background-color: var(--info) !important;
+}
+.bg-warning, .btn-warning{
+    background-color: var(--warning) !important;
+}
+.bg-danger .btn-danger{
+    background-color: var(--danger) !important;
+}
+.nav-link {
+    color: var(--primary) !important ;
+}
+.nav-link:hover{
+    color: var(--warning) !important ; 
+}
+
+.background-image {
+    background-image: url('./img/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  *{
+    font-family: 'Indie flower', cursive;
+  }
+
+  p{
+    font-size: 1vw;
+  }
+
+  button{
+    font-size: 1vw;
+  }
+  @media(max-width: 1200px) {
+    p{
+        font-size: 2vw;
+    }
+    .background-image{
+        background-image: url('');
+    }
+  }
+
+  @media(max-width: 992px) {
+    p{
+        font-size: 4vw;
+    }
+  }
+
+  @media(max-width: 768px) {
+    .background-image {
+        background-image: url('./img/image\ 1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: #F3CC4D;
+      }
+      .bg-sm-none {
+        background-color: transparent !important;
+    }
+    .img-transparent{
+        opacity: 0.4 !important;
+    }
+  }
+
